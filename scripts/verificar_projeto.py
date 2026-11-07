@@ -17,7 +17,7 @@ REQUIRED = [
         ROOT / "ios/Morvan.xcodeproj/xcshareddata/xcschemes/Morvan.xcscheme",
     ROOT / "ios/Morvan/Assets.xcassets/AppIcon.appiconset/Contents.json",
     ROOT / "ios/Morvan/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-    ROOT / ".github/workflows/verificar.yml",
+   
     ROOT / ".github/workflows/gerar-ipa-gratis.yml",
 ]
 for path in REQUIRED:
