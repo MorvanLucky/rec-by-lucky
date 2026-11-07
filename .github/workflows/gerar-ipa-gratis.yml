@@ -1,0 +1,86 @@
+name: Compilar Rec by Lucky e gerar IPA
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compilar:
+    runs-on: macos-26
+    timeout-minutes: 45
+
+    steps:
+      - name: Baixar codigo
+        uses: actions/checkout@v4
+
+      - name: Verificar projeto e Xcode
+        run: |
+          xcodebuild -version
+          python3 scripts/verificar_projeto.py
+
+      - name: Selecionar simulador iPhone
+        run: |
+          python3 - <<'PY' >> "$GITHUB_ENV"
+          import json
+          import subprocess
+
+          data = json.loads(subprocess.check_output(
+              ["xcrun", "simctl", "list", "devices", "available", "-j"],
+              text=True
+          ))
+          phones = [
+              device
+              for runtime, devices in data["devices"].items()
+              if "iOS" in runtime
+              for device in devices
+              if device.get("isAvailable", False)
+              and device.get("name", "").startswith("iPhone")
+          ]
+          if not phones:
+              raise SystemExit("Nenhum simulador iPhone disponivel")
+          print("SIMULATOR_UDID=" + phones[0]["udid"])
+          PY
+
+      - name: Compilar e executar testes
+        run: |
+          set -euo pipefail
+          xcodebuild test \
+            -project ios/Morvan.xcodeproj \
+            -scheme Morvan \
+            -configuration Debug \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Compilar para iPhone
+        run: |
+          set -euo pipefail
+          xcodebuild build \
+            -project ios/Morvan.xcodeproj \
+            -scheme Morvan \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$RUNNER_TEMP/RecBuild" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Empacotar IPA sem assinatura
+        run: |
+          set -euo pipefail
+          APP="$RUNNER_TEMP/RecBuild/Build/Products/Release-iphoneos/Morvan.app"
+          test -d "$APP"
+          mkdir -p "$RUNNER_TEMP/RecPackage/Payload"
+          cp -R "$APP" "$RUNNER_TEMP/RecPackage/Payload/"
+          cd "$RUNNER_TEMP/RecPackage"
+          zip -q -r "$GITHUB_WORKSPACE/Rec-by-Lucky-unsigned.ipa" Payload
+
+      - name: Disponibilizar IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rec-by-Lucky-IPA
+          path: Rec-by-Lucky-unsigned.ipa
+          retention-days: 7
+          if-no-files-found: error
