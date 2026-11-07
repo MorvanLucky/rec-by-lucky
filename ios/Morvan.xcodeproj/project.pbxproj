@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        F7A142F7A142F7A142F7A142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A142F7A142F7A142F7A143 /* Assets.xcassets */; };
+        6DBF5A89C277C3730C711BFB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2B885C97BD461F4B22768818 /* PrivacyInfo.xcprivacy */; };
+		A29259AA4A90A2A3F68B9162 /* LocalProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012761D14897E1C66A46422 /* LocalProcessing.swift */; };
+		393D9CBDE51E3783DF97621E /* ConversationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA08042C750647B9BF7F05 /* ConversationDetailView.swift */; };
+		D9CE266C4A9B19D1D1BCD4CE /* ConversationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0FD54D8A4CFDADA94E309C /* ConversationListView.swift */; };
+		692F7DFD495E70E26D289552 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76296CC62A1C63803A5A8AFC /* LocalStore.swift */; };
+		AC8A217922728BC091EB5D87 /* MediaImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D4B8CF25833D1BC8A8BBE2 /* MediaImport.swift */; };
+		154BE1253DDACE26A477152A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA19F3121F549551DEADC7 /* Models.swift */; };
+		B412A9B2F056925F0A7FD77E /* MorvanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFD1F43E6DA0A1C25DFC359 /* MorvanApp.swift */; };
+		9E8E0C4FE6E51F78BFBBFCC4 /* MorvanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C2E93714563A72BCA3D210 /* MorvanController.swift */; };
+		A07D4C1998BCF23B6E26C79B /* PendingImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBFD6783C3177E83F5296E /* PendingImportView.swift */; };
+		73FB7C05681A55C4C6947574 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9D3456C4D56464A6862B8 /* SettingsView.swift */; };
+		D52748F2721C10326FFBA993 /* LocalStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DDA035E73303EDC20A68D /* LocalStoreTests.swift */; };
+/* End PBXBuildFile section */
+
+
+/* Begin PBXFileReference section */
+        F7A142F7A142F7A142F7A143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        2B885C97BD461F4B22768818 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8012761D14897E1C66A46422 /* LocalProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProcessing.swift; sourceTree = "<group>"; };
+		ABFA08042C750647B9BF7F05 /* ConversationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationDetailView.swift; sourceTree = "<group>"; };
+		4F0FD54D8A4CFDADA94E309C /* ConversationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListView.swift; sourceTree = "<group>"; };
+		76296CC62A1C63803A5A8AFC /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		B2D4B8CF25833D1BC8A8BBE2 /* MediaImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaImport.swift; sourceTree = "<group>"; };
+		99DA19F3121F549551DEADC7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BEFD1F43E6DA0A1C25DFC359 /* MorvanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorvanApp.swift; sourceTree = "<group>"; };
+		12C2E93714563A72BCA3D210 /* MorvanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorvanController.swift; sourceTree = "<group>"; };
+		A4DBFD6783C3177E83F5296E /* PendingImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingImportView.swift; sourceTree = "<group>"; };
+		CCD9D3456C4D56464A6862B8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AC1DDA035E73303EDC20A68D /* LocalStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStoreTests.swift; sourceTree = "<group>"; };
+		7DDD5AFD9AB5C16336A2C59F /* Morvan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morvan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC5C41A9D749A1729A806E3 /* MorvanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorvanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+
+/* Begin PBXGroup section */
+
+        29260D99097B354009431802 = {
+            isa = PBXGroup;
+            children = (
+                F1C61EF6458473542C2DEB98 /* Morvan */,
+                D6F7EF9647284D0EB25C2ACF /* MorvanTests */,
+                359149037D268C5DD4670CB7 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        F1C61EF6458473542C2DEB98 /* Morvan */ = {
+            isa = PBXGroup;
+            children = (
+				8012761D14897E1C66A46422 /* LocalProcessing.swift */,
+				ABFA08042C750647B9BF7F05 /* ConversationDetailView.swift */,
+				4F0FD54D8A4CFDADA94E309C /* ConversationListView.swift */,
+				76296CC62A1C63803A5A8AFC /* LocalStore.swift */,
+				B2D4B8CF25833D1BC8A8BBE2 /* MediaImport.swift */,
+				99DA19F3121F549551DEADC7 /* Models.swift */,
+				BEFD1F43E6DA0A1C25DFC359 /* MorvanApp.swift */,
+				12C2E93714563A72BCA3D210 /* MorvanController.swift */,
+				A4DBFD6783C3177E83F5296E /* PendingImportView.swift */,
+				CCD9D3456C4D56464A6862B8 /* SettingsView.swift */,
+                2B885C97BD461F4B22768818 /* PrivacyInfo.xcprivacy */,
+                F7A142F7A142F7A142F7A143 /* Assets.xcassets */,
+            );
+            path = Morvan;
+            sourceTree = "<group>";
+        };
+        D6F7EF9647284D0EB25C2ACF /* MorvanTests */ = {
+            isa = PBXGroup;
+            children = (
+				AC1DDA035E73303EDC20A68D /* LocalStoreTests.swift */,
+            );
+            path = MorvanTests;
+            sourceTree = "<group>";
+        };
+        359149037D268C5DD4670CB7 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                7DDD5AFD9AB5C16336A2C59F /* Morvan.app */,
+                9DC5C41A9D749A1729A806E3 /* MorvanTests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+
+/* End PBXGroup section */
+
+
+/* Begin PBXSourcesBuildPhase / PBXResourcesBuildPhase / PBXFrameworksBuildPhase section */
+
+        331221275C8FA52E1F4E864C /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+				A29259AA4A90A2A3F68B9162 /* LocalProcessing.swift in Sources */,
+				393D9CBDE51E3783DF97621E /* ConversationDetailView.swift in Sources */,
+				D9CE266C4A9B19D1D1BCD4CE /* ConversationListView.swift in Sources */,
+				692F7DFD495E70E26D289552 /* LocalStore.swift in Sources */,
+				AC8A217922728BC091EB5D87 /* MediaImport.swift in Sources */,
+				154BE1253DDACE26A477152A /* Models.swift in Sources */,
+				B412A9B2F056925F0A7FD77E /* MorvanApp.swift in Sources */,
+				9E8E0C4FE6E51F78BFBBFCC4 /* MorvanController.swift in Sources */,
+				A07D4C1998BCF23B6E26C79B /* PendingImportView.swift in Sources */,
+				73FB7C05681A55C4C6947574 /* SettingsView.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3DAB154D1B1ED26E6FE35C88 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+				D52748F2721C10326FFBA993 /* LocalStoreTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        10C1A72C2DDB00EAF81D2CA5 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                6DBF5A89C277C3730C711BFB /* PrivacyInfo.xcprivacy in Resources */,
+                F7A142F7A142F7A142F7A142 /* Assets.xcassets in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        FCA0FE3872FD2D8E7C5A2670 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        CE8AD7F62F2E18EE6507F4E1 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        082E1C887841B0101FDE0CAF /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+
+/* End PBXSourcesBuildPhase / PBXResourcesBuildPhase / PBXFrameworksBuildPhase section */
+
+
+/* Begin PBXContainerItemProxy section */
+        864EE57A23B75C9A8096638B = {
+            isa = PBXContainerItemProxy;
+            containerPortal = D0DA9C31B13F0620243BF98E;
+            proxyType = 1;
+            remoteGlobalIDString = D9DB43E5F7E694C11D7B5E8E;
+            remoteInfo = Morvan;
+        };
+/* End PBXContainerItemProxy section */
+
+
+/* Begin PBXTargetDependency section */
+        A08B841529C2A9FADBD532D2 = {
+            isa = PBXTargetDependency;
+            target = D9DB43E5F7E694C11D7B5E8E;
+            targetProxy = 864EE57A23B75C9A8096638B;
+        };
+/* End PBXTargetDependency section */
+
+
+/* Begin PBXNativeTarget section */
+
+        D9DB43E5F7E694C11D7B5E8E = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = CC7FF612AD83648D67018396;
+            buildPhases = (331221275C8FA52E1F4E864C, FCA0FE3872FD2D8E7C5A2670, 10C1A72C2DDB00EAF81D2CA5);
+            buildRules = ();
+            dependencies = ();
+            name = Morvan;
+            productName = Morvan;
+            productReference = 7DDD5AFD9AB5C16336A2C59F;
+            productType = "com.apple.product-type.application";
+        };
+        710A16250D6C8E6259B48616 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 464775A5E05B058147385B71;
+            buildPhases = (3DAB154D1B1ED26E6FE35C88, 082E1C887841B0101FDE0CAF, CE8AD7F62F2E18EE6507F4E1);
+            buildRules = ();
+            dependencies = (A08B841529C2A9FADBD532D2);
+            name = MorvanTests;
+            productName = MorvanTests;
+            productReference = 9DC5C41A9D749A1729A806E3;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+/* End PBXNativeTarget section */
+
+
+/* Begin PBXProject section */
+
+        D0DA9C31B13F0620243BF98E = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = YES;
+                LastUpgradeCheck = 1600;
+                TargetAttributes = {
+                    D9DB43E5F7E694C11D7B5E8E = { CreatedOnToolsVersion = 16.0; };
+                    710A16250D6C8E6259B48616 = { CreatedOnToolsVersion = 16.0; TestTargetID = D9DB43E5F7E694C11D7B5E8E; };
+                };
+            };
+            buildConfigurationList = 680F88A6D7C5284031E850EE;
+            compatibilityVersion = "Xcode 15.0";
+            developmentRegion = "pt-BR";
+            hasScannedForEncodings = 0;
+            knownRegions = (en, "pt-BR", Base);
+            mainGroup = 29260D99097B354009431802;
+            productRefGroup = 359149037D268C5DD4670CB7;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (D9DB43E5F7E694C11D7B5E8E, 710A16250D6C8E6259B48616);
+        };
+/* End PBXProject section */
+
+
+/* Begin XCBuildConfiguration section */
+
+        16A5DB00C3323B52BD2D1DF9 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                ENABLE_TESTABILITY = YES;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ENABLE_MODULES = YES;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = 1;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+            };
+            name = Debug;
+        };
+
+        58F634B79337188535C8384B /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ENABLE_MODULES = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = 1;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+            };
+            name = Release;
+        };
+
+        A3649E2BB7EED0B2417AFCF2 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                INFOPLIST_KEY_CFBundleDisplayName = "Rec by Lucky";
+                INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = YES;
+                INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "O Rec by Lucky transcreve arquivos de áudio no próprio iPhone sem enviar gravações à internet.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "O Rec by Lucky usa autenticação do iPhone para proteger conversas privadas.";
+                INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+                INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+                INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+                INFOPLIST_KEY_UIRequiresFullScreen = NO;
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = br.morvan.transcricao;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_EMIT_LOC_STRINGS = YES;
+                SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+                TARGETED_DEVICE_FAMILY = 1;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+
+        E63C374BB71B22F835F0798A /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                INFOPLIST_KEY_CFBundleDisplayName = "Rec by Lucky";
+                INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = YES;
+                INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "O Rec by Lucky transcreve arquivos de áudio no próprio iPhone sem enviar gravações à internet.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "O Rec by Lucky usa autenticação do iPhone para proteger conversas privadas.";
+                INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+                INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+                INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+                INFOPLIST_KEY_UIRequiresFullScreen = NO;
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = br.morvan.transcricao;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_EMIT_LOC_STRINGS = YES;
+                SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+                TARGETED_DEVICE_FAMILY = 1;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+            };
+            name = Release;
+        };
+
+        F3A202F6B3FF3D736F8AEB16 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                GENERATE_INFOPLIST_FILE = YES;
+                PRODUCT_BUNDLE_IDENTIFIER = br.morvan.transcricao.tests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = 1;
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morvan.app/Morvan";
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+
+        72777F3B102988A36C3B4228 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                GENERATE_INFOPLIST_FILE = YES;
+                PRODUCT_BUNDLE_IDENTIFIER = br.morvan.transcricao.tests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = 1;
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morvan.app/Morvan";
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+            };
+            name = Release;
+        };
+
+/* End XCBuildConfiguration section */
+
+
+/* Begin XCConfigurationList section */
+
+        680F88A6D7C5284031E850EE = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                16A5DB00C3323B52BD2D1DF9 /* Debug */,
+                58F634B79337188535C8384B /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        CC7FF612AD83648D67018396 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                A3649E2BB7EED0B2417AFCF2 /* Debug */,
+                E63C374BB71B22F835F0798A /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        464775A5E05B058147385B71 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F3A202F6B3FF3D736F8AEB16 /* Debug */,
+                72777F3B102988A36C3B4228 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+
+/* End XCConfigurationList section */
+
+    };
+    rootObject = D0DA9C31B13F0620243BF98E;
+}

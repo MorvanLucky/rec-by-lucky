@@ -1,0 +1,48 @@
+REC BY LUCKY — REVISÃO LOCAL
+
+Nome exibido no iPhone e nas telas: Rec by Lucky.
+Identificadores internos, scheme Xcode e IPA ainda usam Morvan.
+
+ALTERAÇÕES
+- Corrigida chamada SettingsView com parâmetro inexistente.
+- Habilitado ENABLE_TESTABILITY em Debug para @testable import Morvan.
+- Leitura de confirmação do JSON salvo antes de apagar áudio temporário.
+- Áudios preservados se o salvamento ou a confirmação falharem.
+- Edição/fechamento bloqueados durante a transcrição.
+- Recuperação do texto pendente após erro; fechamento informa falhas ao salvar.
+- Verificador Python usa UTF-8 explicitamente no Windows.
+- Workflow de IPA depende da verificação e dos testes no simulador.
+- Acrescentados XCTest de texto vazio e falha real de escrita com nova tentativa.
+
+VERIFICADO NESTE WINDOWS
+- Verificador estrutural Python executado com sucesso.
+- XML do scheme, referências de arquivos do projeto e integridade do ZIP.
+
+AINDA NÃO COMPROVADO
+- Análise sintática Swift: compilador Swift indisponível neste Windows.
+- Compilação Xcode, execução dos XCTest, IPA, assinatura e instalação.
+- Reconhecimento local de português e resumos no iPhone real.
+Os testes adicionados só serão executados no GitHub Actions/macOS.
+
+GITHUB
+Criar repositório rec-by-lucky e publicar o conteúdo da pasta do projeto,
+incluindo .github/workflows. Não enviar apenas o ZIP como um arquivo.
+Executar Actions > Gerar IPA gratuito - Morvan > Run workflow.
+A geração do IPA só prossegue se as verificações e os testes passarem.
+O artifact Morvan-IPA-para-AltStore contém Morvan-gratis-unsigned.ipa.
+
+TESTES NO IPHONE
+1. Importar M4A curto com fala em português e guardar áudio desligado.
+2. Transcrever; fechar/reabrir e conferir o texto completo.
+3. Editar, salvar, pesquisar uma palavra e exportar TXT.
+4. Importar outro áudio com guardar áudio ligado; ouvir e excluir só áudio.
+5. Importar MP4/MOV/M4V com áudio; conferir a extração e a transcrição.
+6. Testar erro/arquivo incompatível: tentar novamente ou excluir temporário.
+7. Conferir em todos os casos que o arquivo original permanece intacto.
+8. Colocar em segundo plano e voltar: exigir Face ID/código para acesso.
+9. Após conceder permissões, repetir transcrição em modo avião para validar offline.
+10. Pedir resumo se Apple Intelligence estiver disponível; revisar fidelidade.
+
+Instalação: seguir INSTALAR_GRATIS_WINDOWS_IPHONE.md no pacote.
+Fonte oficial AltStore: https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows
+Sem fallback de transcrição pago ou online. pt-BR offline depende do aparelho.
